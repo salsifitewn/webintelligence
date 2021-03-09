@@ -17,6 +17,13 @@
             font-family: 'Nunito', sans-serif;
         }
     </style>
+        @if (env('APP_ENV') == 'local')
+    <script type="module" src="http://localhost:3000/@vite/client"></script>
+    <script type="module" src="http://localhost:3000/app.js"></script>
+    @else
+    <script type="module" src="dist/{{ $manifest['index.js']['file'] }}"></script>
+    <link href="dist/{{ $manifest['index.css']['file'] }}" rel="stylesheet" />
+    @endif
 </head>
 
 <body class="antialiased">
@@ -34,11 +41,9 @@
             @endauth
         </div>
         @endif
-        <hello-world msg="Hello Vue 3 + Vite"></hello-world>
 
         <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
             @yield('content')
-
         </div>
     </div>
 
