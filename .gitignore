@@ -15,3 +15,10 @@ yarn-error.log
 dist
 dist-ssr
 *.local
+resources/views/auth/register.blade.php
+resources/views/auth/verify.blade.php
+resources/views/auth/passwords/confirm.blade.php
+app/Http/Controllers/Auth/ConfirmPasswordController.php
+app/Http/Controllers/Auth/RegisterController.php
+app/Http/Controllers/Auth/VerificationController.php
+app/Http/Controllers/ContactController.php
