@@ -7,7 +7,12 @@ export default defineConfig({
     root: process.cwd() + '/resources/js',
     build: {
         manifest: true,
-        outDir: '../../public/dist',
+        outDir: '../../public/dist', // from root path
         emptyOutDir: true,
+    },
+    resolve: {
+        alias: {
+            vue: 'vue/dist/vue.esm-bundler.js',
+        },
     },
 })

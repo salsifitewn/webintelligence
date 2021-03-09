@@ -1,4 +1,6 @@
 <template>
+  <img alt="Vue logo" src="../assets/logo.png" />
+
   <h1>{{ msg }}</h1>
 
   <p>
@@ -9,8 +11,10 @@
     <a href="https://v3.vuejs.org/" target="_blank">Vue 3 Documentation</a>
   </p>
 
-  <button @click="state.count++">count is: {{ state.count }}</button>
-  <div class="container">
+  <button class="btn btn-primary" @click="state.count++">
+    count is: {{ state.count }}
+  </button>
+  <div class="container mt-2">
     <div class="row border">
       <div class="col">test</div>
       <div class="col">test</div>
