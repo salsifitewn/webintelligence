@@ -9,6 +9,10 @@ export default defineConfig({
         manifest: true,
         outDir: '../../public/dist', // from root path
         emptyOutDir: true,
+        rollupOptions: {
+            // overwrite default .html entry
+            input: 'resources/js/app.js',
+        },
     },
     resolve: {
         alias: {

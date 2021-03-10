@@ -15,8 +15,8 @@
         <script type="module" src="http://localhost:3000/@vite/client"></script>
         <script type="module" src="http://localhost:3000/app.js"></script>
     @else
-        <script type="module" src="dist/{{ $manifest['index.js']['file'] }}"></script>
-        <link href="dist/{{ $manifest['index.css']['file'] }}" rel="stylesheet" />
+    <link rel="stylesheet" href="/dist/{{ $manifest['app.js']['css'][0]}}" />
+<script type="module" src="/dist/{{ $manifest['app.js']['file']}}"></script>
     @endif
 </head>
 
