@@ -1,13 +1,14 @@
-// import 'poppers.js'
+import 'vite/dynamic-import-polyfill'
+import 'jquery'
 import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '../css/app.css'
-import 'vite/dynamic-import-polyfill'
 import { createApp } from 'vue'
 
-import HelloWorld from './components/HelloWorld.vue'
+import ContactsTable from './components/ContactsTable.vue'
+
 const app = createApp({
     components: {
-        HelloWorld,
+        ContactsTable,
     },
 }).mount('#app')

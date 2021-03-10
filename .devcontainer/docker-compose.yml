@@ -1,4 +1,4 @@
-version: "3"
+version: '3'
 
 services:
   app:
@@ -7,10 +7,10 @@ services:
       dockerfile: Dockerfile
       args:
         # [Choice] PHP version: 7, 7.4, 7.3
-        VARIANT: "8"
+        VARIANT: '8'
         # [Option] Install Node.js
-        INSTALL_NODE: "true"
-        NODE_VERSION: "lts/*"
+        INSTALL_NODE: 'true'
+        NODE_VERSION: 'lts/*'
         # On Linux, you may need to update USER_UID and USER_GID below if not your local UID is not 1000.
         USER_UID: 1000
         USER_GID: 1000
@@ -36,8 +36,8 @@ services:
     volumes:
       - mariadb-data:/var/lib/mysql
     environment:
-      MYSQL_ROOT_PASSWORD: mariadb
-      MYSQL_DATABASE: laravel
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: webintelligence
       MYSQL_USER: mariadb
       MYSQL_PASSWORD: mariadb
 

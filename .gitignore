@@ -21,4 +21,3 @@ resources/views/auth/passwords/confirm.blade.php
 app/Http/Controllers/Auth/ConfirmPasswordController.php
 app/Http/Controllers/Auth/RegisterController.php
 app/Http/Controllers/Auth/VerificationController.php
-app/Http/Controllers/ContactController.php
